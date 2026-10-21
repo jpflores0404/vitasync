@@ -2,6 +2,8 @@
 
 Status: **Approved for Phase 0–1** (2026-10-21). Feature implementation beyond scaffolding starts only after Phase 0 results are reviewed.
 
+Phase 0 is **in progress**. Results so far are in [FEASIBILITY.md](FEASIBILITY.md), and the draft voice phrase set is in [PHRASE_SET.md](PHRASE_SET.md).
+
 Each decision referenced as `D#` is recorded in [DECISIONS.md](DECISIONS.md).
 
 Labels used throughout:

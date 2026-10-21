@@ -28,3 +28,11 @@ spikes/**/audio/
 *.wav
 *.webm
 docs/research/private/
+
+# Spike assets downloaded by spikes/scripts/fetch-assets.sh, and spike build output
+spikes/public/models/
+spikes/public/tesseract/
+dist-spikes
+
+# Default output of spikes/scripts/smoke.mjs
+spikes/smoke-results/

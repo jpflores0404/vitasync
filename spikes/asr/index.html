@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spike 1 — Speech recognition</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav><a href="../">← Spikes</a></nav>
+    <h1>Spike 1 — Offline speech recognition</h1>
+    <p class="banner">Research prototype. Synthetic values only. Audio stays on this device; live mode never stores it.</p>
+
+    <section>
+      <div class="row">
+        <label>Model
+          <select id="model">
+            <option value="en-us">vosk-model-small-en-us-0.15 (40 MB)</option>
+            <option value="en-in">vosk-model-small-en-in-0.4 (36 MB)</option>
+          </select>
+        </label>
+        <label>Grammar
+          <select id="grammar">
+            <option value="full">Phrase grammar (full)</option>
+            <option value="no-letters">Phrase grammar without single letters</option>
+            <option value="off">Off (open vocabulary)</option>
+          </select>
+        </label>
+        <button id="load" class="primary">Load model</button>
+        <span id="load-status" class="mono"></span>
+      </div>
+      <div class="row tabs" role="group" aria-label="Mode">
+        <button data-tab="live" aria-pressed="true">Live test</button>
+        <button data-tab="batch" aria-pressed="false">Batch scoring</button>
+        <button data-tab="record" aria-pressed="false">Record corpus</button>
+      </div>
+    </section>
+
+    <section data-panel="live">
+      <h2>Live push-to-talk</h2>
+      <p class="note">Hold the button or hold Space. Release to recognise. Esc cancels and releases the microphone.</p>
+      <div class="row">
+        <button id="talk" class="talk" disabled>Hold to talk</button>
+        <span id="mic-live" class="live" hidden>Mic live</span>
+      </div>
+      <p>Transcript: <span id="partial" class="mono"></span></p>
+      <div id="live-result"></div>
+      <h2>Session log</h2>
+      <table id="live-log"><thead><tr><th>#</th><th>Transcript</th><th>Parsed</th><th>Release → result</th><th>Mic released</th></tr></thead><tbody></tbody></table>
+    </section>
+
+    <section data-panel="batch" hidden>
+      <h2>Batch scoring of recorded clips</h2>
+      <p class="note">Select WAV files named <span class="mono">P1_headset_quiet_p06_1.wav</span>. Each clip is scored on field extraction against the phrase script.</p>
+      <div class="row">
+        <input type="file" id="clips" accept=".wav,audio/wav" multiple />
+        <label><input type="checkbox" id="pad" /> Prepend 0.5 s silence (simulates push-to-talk lead-in)</label>
+        <button id="run-batch" class="primary" disabled>Run</button>
+        <button id="dl-json" disabled>Download JSON</button>
+        <button id="dl-csv" disabled>Download CSV</button>
+      </div>
+      <div id="batch-summary"></div>
+      <table id="batch-table"><thead><tr><th>Clip</th><th>Transcript</th><th>Fields</th><th>Correct</th><th>Wrong</th><th>Missed</th><th>ms</th></tr></thead><tbody></tbody></table>
+    </section>
+
+    <section data-panel="record" hidden>
+      <h2>Record the spike corpus</h2>
+      <p class="note">Get signed consent first. Saved clips download to this computer; keep them out of the git repo.</p>
+      <div class="row">
+        <label>Speaker <input id="speaker" value="P1" size="4" /></label>
+        <label>Mic <select id="mic"><option>headset</option><option>builtin</option></select></label>
+        <label>Noise <select id="noise"><option>quiet</option><option>chatter</option></select></label>
+      </div>
+      <p class="note">Phrase <span id="phrase-pos"></span></p>
+      <p class="prompt" id="phrase-prompt"></p>
+      <div class="row">
+        <button id="rec" class="talk">Hold to record</button>
+        <span id="rec-live" class="live" hidden>Recording</span>
+      </div>
+      <div class="row">
+        <audio id="playback" controls hidden></audio>
+        <button id="keep" class="primary" disabled>Keep &amp; next</button>
+        <button id="prev">Previous</button>
+        <button id="skip">Skip</button>
+      </div>
+    </section>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
