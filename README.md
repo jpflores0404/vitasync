@@ -6,7 +6,7 @@ An experimental, offline-first progressive web app for recording vital signs. Nu
 
 ## Status
 
-Planning is done, and the next step is Phase 0 (feasibility spikes). See [docs/PLAN.md](docs/PLAN.md) and [docs/DECISIONS.md](docs/DECISIONS.md).
+Phase 0 (feasibility spikes) is in progress. See [docs/FEASIBILITY.md](docs/FEASIBILITY.md). See [docs/PLAN.md](docs/PLAN.md) and [docs/DECISIONS.md](docs/DECISIONS.md).
 
 ## Quick start
 
@@ -25,6 +25,9 @@ pnpm lint      # oxlint
 | --- | --- |
 | [docs/PLAN.md](docs/PLAN.md) | Goals, architecture, engine assessment, phases, acceptance criteria |
 | [docs/DECISIONS.md](docs/DECISIONS.md) | Decision log |
+| [docs/FEASIBILITY.md](docs/FEASIBILITY.md) | Phase 0 spike results: demonstrated vs unverified |
+| [docs/PHRASE_SET.md](docs/PHRASE_SET.md) | Draft voice phrase set |
+| [spikes/README.md](spikes/README.md) | How to run the spikes |
 | [AGENTS.md](AGENTS.md) | Repository conventions for contributors and coding agents |
 
 PRD, architecture, workflows, data model, privacy and safety, test plan and feasibility docs are added in Phases 0–1.

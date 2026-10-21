@@ -1,0 +1,242 @@
+{
+  "ocr": [
+    {
+      "image": "thermo_36.7_01.png",
+      "settings": "ssd_int psm7 h160 inv:auto",
+      "text": "",
+      "expected": "36.7",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 22
+    },
+    {
+      "image": "thermo_38.5_02.png",
+      "settings": "ssd_int psm7 h160 inv:auto",
+      "text": "000030101",
+      "expected": "38.5",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 75
+    },
+    {
+      "image": "thermo_37.0_03.png",
+      "settings": "ssd_int psm7 h160 inv:auto",
+      "text": "",
+      "expected": "37",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 38
+    },
+    {
+      "image": "oxi_98_04.png",
+      "settings": "ssd_int psm7 h160 inv:auto",
+      "text": "",
+      "expected": "98",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 38
+    },
+    {
+      "image": "oxi_76_05.png",
+      "settings": "ssd_int psm7 h160 inv:auto",
+      "text": "",
+      "expected": "76",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 35
+    },
+    {
+      "image": "oxi_100_06.png",
+      "settings": "ssd_int psm7 h160 inv:auto",
+      "text": "",
+      "expected": "100",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 35
+    },
+    {
+      "image": "thermo_36.7_01.png",
+      "settings": "ssd_int psm7 h160 inv:auto close",
+      "text": "36.1",
+      "expected": "36.7",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 39
+    },
+    {
+      "image": "thermo_38.5_02.png",
+      "settings": "ssd_int psm7 h160 inv:auto close",
+      "text": "38.5",
+      "expected": "38.5",
+      "exact": "yes",
+      "ignoringDecimal": "yes",
+      "ms": 43
+    },
+    {
+      "image": "thermo_37.0_03.png",
+      "settings": "ssd_int psm7 h160 inv:auto close",
+      "text": "370",
+      "expected": "37",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 45
+    },
+    {
+      "image": "oxi_98_04.png",
+      "settings": "ssd_int psm7 h160 inv:auto close",
+      "text": "39",
+      "expected": "98",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 41
+    },
+    {
+      "image": "oxi_76_05.png",
+      "settings": "ssd_int psm7 h160 inv:auto close",
+      "text": "16",
+      "expected": "76",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 42
+    },
+    {
+      "image": "oxi_100_06.png",
+      "settings": "ssd_int psm7 h160 inv:auto close",
+      "text": "100",
+      "expected": "100",
+      "exact": "yes",
+      "ignoringDecimal": "yes",
+      "ms": 41
+    },
+    {
+      "image": "thermo_36.7_01.png",
+      "settings": "eng psm7 h160 inv:auto",
+      "text": "",
+      "expected": "36.7",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 31
+    },
+    {
+      "image": "thermo_38.5_02.png",
+      "settings": "eng psm7 h160 inv:auto",
+      "text": "..",
+      "expected": "38.5",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 77
+    },
+    {
+      "image": "thermo_37.0_03.png",
+      "settings": "eng psm7 h160 inv:auto",
+      "text": "",
+      "expected": "37",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 38
+    },
+    {
+      "image": "oxi_98_04.png",
+      "settings": "eng psm7 h160 inv:auto",
+      "text": "",
+      "expected": "98",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 37
+    },
+    {
+      "image": "oxi_76_05.png",
+      "settings": "eng psm7 h160 inv:auto",
+      "text": "",
+      "expected": "76",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 35
+    },
+    {
+      "image": "oxi_100_06.png",
+      "settings": "eng psm7 h160 inv:auto",
+      "text": "",
+      "expected": "100",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 37
+    },
+    {
+      "image": "thermo_36.7_01.png",
+      "settings": "eng psm7 h160 inv:auto close",
+      "text": "36.1",
+      "expected": "36.7",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 44
+    },
+    {
+      "image": "thermo_38.5_02.png",
+      "settings": "eng psm7 h160 inv:auto close",
+      "text": "385",
+      "expected": "38.5",
+      "exact": "no",
+      "ignoringDecimal": "yes",
+      "ms": 43
+    },
+    {
+      "image": "thermo_37.0_03.png",
+      "settings": "eng psm7 h160 inv:auto close",
+      "text": "370",
+      "expected": "37",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 48
+    },
+    {
+      "image": "oxi_98_04.png",
+      "settings": "eng psm7 h160 inv:auto close",
+      "text": "",
+      "expected": "98",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 46
+    },
+    {
+      "image": "oxi_76_05.png",
+      "settings": "eng psm7 h160 inv:auto close",
+      "text": "16",
+      "expected": "76",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 45
+    },
+    {
+      "image": "oxi_100_06.png",
+      "settings": "eng psm7 h160 inv:auto close",
+      "text": "",
+      "expected": "100",
+      "exact": "no",
+      "ignoringDecimal": "no",
+      "ms": 47
+    }
+  ],
+  "pwa": {
+    "writeMs": 49,
+    "countOnline": 500,
+    "readMsOnline": 33,
+    "countOffline": 500,
+    "readMsOffline": 32,
+    "countAfterOfflineWrite": 1000,
+    "offlineChecks": {
+      "Secure context": "true",
+      "Online": "false",
+      "Service worker controlling page": "true",
+      "Running as installed app": "false",
+      "Persistent storage granted": "false",
+      "Storage used / quota": "3.7 MB / 10243.7 MB",
+      "IndexedDB databases": "vitasync-spike",
+      "Vosk model cache (IDBFS \"/vosk\")": "absent",
+      "Cache Storage": "workbox-precache-v2-http://localhost:4174/ (16)",
+      "Spike records stored": "1000"
+    },
+    "ocrOnline": "38.5",
+    "ocrOffline": "38.5"
+  }
+}

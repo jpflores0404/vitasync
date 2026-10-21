@@ -9,9 +9,11 @@ pnpm install
 pnpm dev
 pnpm build      # tsc -b && vite build — must pass before a PR
 pnpm lint       # oxlint
+pnpm typecheck  # tsc -b (app + spikes)
+pnpm test       # Vitest unit tests
 ```
 
-Test commands (Vitest, Playwright) are added in Phase 3.
+Phase 0 spike commands are in [spikes/README.md](spikes/README.md).
 
 ## Hard rules
 

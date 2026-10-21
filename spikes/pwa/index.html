@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spike 3 — Offline storage</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav><a href="../">← Spikes</a></nav>
+    <h1>Spike 3 — Offline PWA and storage</h1>
+    <p class="banner">Synthetic records only. Run from a production build (<span class="mono">pnpm spike:build &amp;&amp; pnpm spike:preview</span>); the service worker is off in dev mode.</p>
+
+    <section>
+      <h2>Environment</h2>
+      <table id="checks"><tbody></tbody></table>
+      <div class="row">
+        <button id="refresh">Refresh checks</button>
+        <button id="persist">Request persistent storage</button>
+        <button id="copy">Download report</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>IndexedDB records</h2>
+      <p class="note">Write synthetic chart rows, go offline (DevTools → Network → Offline, or unplug), reload, and confirm the count survives.</p>
+      <div class="row">
+        <button id="write" class="primary">Write 500 synthetic records</button>
+        <button id="read">Read all</button>
+        <button id="clear">Delete spike database</button>
+      </div>
+      <pre id="db-log"></pre>
+    </section>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

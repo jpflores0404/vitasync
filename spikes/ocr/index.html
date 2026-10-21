@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spike 2 — Display OCR</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav><a href="../">← Spikes</a></nav>
+    <h1>Spike 2 — OCR of digital instrument displays</h1>
+    <p class="banner">Research prototype. Images are processed in memory and never saved.</p>
+
+    <section>
+      <div class="row">
+        <label>Images <input type="file" id="files" accept="image/*" multiple /></label>
+        <button id="cam-start">Use webcam</button>
+        <button id="cam-capture" hidden>Capture frame</button>
+      </div>
+      <p class="note">For scoring, name files <span class="mono">thermo_36.7_01.jpg</span> or <span class="mono">oxi_98-76_01.jpg</span> (SpO₂-pulse). Other names still run, without a score.</p>
+      <video id="video" autoplay playsinline muted hidden style="max-width: 100%"></video>
+      <div class="row">
+        <button id="prev">Previous</button>
+        <span id="pos" class="mono"></span>
+        <button id="next">Next</button>
+      </div>
+      <p class="note">Drag on the image to crop to the display.</p>
+      <canvas id="view"></canvas>
+    </section>
+
+    <section>
+      <div class="row">
+        <label>Trained data
+          <select id="lang">
+            <option value="ssd_int">ssd_int (7-segment)</option>
+            <option value="eng">eng (stock)</option>
+          </select>
+        </label>
+        <label>Layout
+          <select id="psm">
+            <option value="7">Single line (7)</option>
+            <option value="6">Block (6)</option>
+            <option value="11">Sparse text (11)</option>
+          </select>
+        </label>
+        <label>Height px <input type="number" id="height" value="160" min="40" max="600" step="20" /></label>
+        <label>Invert
+          <select id="invert"><option value="auto">Auto</option><option value="on">On</option><option value="off">Off</option></select>
+        </label>
+        <label><input type="checkbox" id="close" /> Close segment gaps</label>
+      </div>
+      <div class="row">
+        <button id="run" class="primary">Run OCR</button>
+        <button id="dl-json" disabled>Download JSON</button>
+        <button id="dl-csv" disabled>Download CSV</button>
+        <span id="status" class="mono"></span>
+      </div>
+      <canvas id="processed"></canvas>
+      <div id="result"></div>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <div id="summary"></div>
+      <table id="results"><thead><tr><th>Image</th><th>Settings</th><th>Text</th><th>Numbers</th><th>Expected</th><th>Exact</th><th>Ignoring “.”</th><th>ms</th></tr></thead><tbody></tbody></table>
+    </section>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

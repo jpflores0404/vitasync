@@ -1,0 +1,1391 @@
+{
+  "config": {
+    "model": "en-us",
+    "grammar": "off",
+    "leadInSilence": false
+  },
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 10,
+    "deviceMemory": 16,
+    "online": true,
+    "date": "2026-10-21T09:21:12.578Z"
+  },
+  "summary": {
+    "clips": 51,
+    "fieldAccuracy": "56.8%",
+    "wrongValues": 0,
+    "missed": 35,
+    "realTimeFactor": "0.27"
+  },
+  "rows": [
+    {
+      "clip": "aman_tts_quiet_p01_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p01",
+      "transcript": "blood pressure one hundred twenty over eighty",
+      "parsed": "systolic=120 diastolic=80",
+      "score": {
+        "expectedFields": 2,
+        "correctFields": 2,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "systolic": {
+            "expected": 120,
+            "got": 120,
+            "flagged": false
+          },
+          "diastolic": {
+            "expected": 80,
+            "got": 80,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 686,
+      "audioMs": 2268
+    },
+    {
+      "clip": "aman_tts_quiet_p02_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p02",
+      "transcript": "temperature thirty six point seven",
+      "parsed": "temperature=36.7",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "temperature": {
+            "expected": 36.7,
+            "got": 36.7,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 610,
+      "audioMs": 1614
+    },
+    {
+      "clip": "aman_tts_quiet_p03_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p03",
+      "transcript": "the seventy six",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 76,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 437,
+      "audioMs": 1022
+    },
+    {
+      "clip": "aman_tts_quiet_p04_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p04",
+      "transcript": "respiratory rate eighteen",
+      "parsed": "respiratoryRate=18",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 18,
+            "got": 18,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 536,
+      "audioMs": 1378
+    },
+    {
+      "clip": "aman_tts_quiet_p05_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p05",
+      "transcript": "oxygen saturation ninety eight",
+      "parsed": "spo2=98",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "spo2": {
+            "expected": 98,
+            "got": 98,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 616,
+      "audioMs": 1737
+    },
+    {
+      "clip": "aman_tts_quiet_p06_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p06",
+      "transcript": "bb one twenty over eighty five seventy six respiratory rate eighteen oxygen ninety eight temperature thirty six point seven",
+      "parsed": "respiratoryRate=18 spo2=98 temperature=36.7",
+      "score": {
+        "expectedFields": 6,
+        "correctFields": 3,
+        "wrongValues": 0,
+        "missed": 3,
+        "detail": {
+          "systolic": {
+            "expected": 120,
+            "got": null,
+            "flagged": false
+          },
+          "diastolic": {
+            "expected": 80,
+            "got": null,
+            "flagged": false
+          },
+          "pulse": {
+            "expected": 76,
+            "got": null,
+            "flagged": false
+          },
+          "respiratoryRate": {
+            "expected": 18,
+            "got": 18,
+            "flagged": false
+          },
+          "spo2": {
+            "expected": 98,
+            "got": 98,
+            "flagged": false
+          },
+          "temperature": {
+            "expected": 36.7,
+            "got": 36.7,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 1302,
+      "audioMs": 8022
+    },
+    {
+      "clip": "aman_tts_quiet_p07_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p07",
+      "transcript": "respiratory rate sixteen",
+      "parsed": "respiratoryRate=16",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 16,
+            "got": 16,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 532,
+      "audioMs": 1452
+    },
+    {
+      "clip": "aman_tts_quiet_p08_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p08",
+      "transcript": "the sixty",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 60,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 373,
+      "audioMs": 759
+    },
+    {
+      "clip": "aman_tts_quiet_p09_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p09",
+      "transcript": "respiratory rate thirteen",
+      "parsed": "respiratoryRate=13",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 13,
+            "got": 13,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 572,
+      "audioMs": 1421
+    },
+    {
+      "clip": "aman_tts_quiet_p10_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p10",
+      "transcript": "the fifty",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 50,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 355,
+      "audioMs": 722
+    },
+    {
+      "clip": "aman_tts_quiet_p11_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p11",
+      "transcript": "heart rate one hundred fifteen",
+      "parsed": "pulse=115",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "pulse": {
+            "expected": 115,
+            "got": 115,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 571,
+      "audioMs": 1615
+    },
+    {
+      "clip": "aman_tts_quiet_p12_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p12",
+      "transcript": "temperature thirty eight point five",
+      "parsed": "temperature=38.5",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "temperature": {
+            "expected": 38.5,
+            "got": 38.5,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 579,
+      "audioMs": 1704
+    },
+    {
+      "clip": "aman_tts_quiet_p13_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p13",
+      "transcript": "the amp thirty seven point zero",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "temperature": {
+            "expected": 37,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 587,
+      "audioMs": 1577
+    },
+    {
+      "clip": "aman_tts_quiet_p14_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p14",
+      "transcript": "bp ninety over sixty",
+      "parsed": "systolic=90 diastolic=60",
+      "score": {
+        "expectedFields": 2,
+        "correctFields": 2,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "systolic": {
+            "expected": 90,
+            "got": 90,
+            "flagged": false
+          },
+          "diastolic": {
+            "expected": 60,
+            "got": 60,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 528,
+      "audioMs": 1537
+    },
+    {
+      "clip": "aman_tts_quiet_p15_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p15",
+      "transcript": "bp one forty over ninety both eighty eight sat ninety five",
+      "parsed": "systolic=⚑ diastolic=⚑ spo2=95",
+      "score": {
+        "expectedFields": 4,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 3,
+        "detail": {
+          "systolic": {
+            "expected": 140,
+            "got": null,
+            "flagged": true
+          },
+          "diastolic": {
+            "expected": 90,
+            "got": null,
+            "flagged": true
+          },
+          "pulse": {
+            "expected": 88,
+            "got": null,
+            "flagged": false
+          },
+          "spo2": {
+            "expected": 95,
+            "got": 95,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 897,
+      "audioMs": 4358
+    },
+    {
+      "clip": "aman_tts_quiet_p16_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p16",
+      "transcript": "blood pressure one hundred ten over",
+      "parsed": "systolic=⚑ diastolic=⚑",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "diastolic": {
+            "got": null,
+            "flagged": true
+          }
+        }
+      },
+      "processingMs": 581,
+      "audioMs": 1872
+    },
+    {
+      "clip": "aman_tts_quiet_p17_1.wav",
+      "speaker": "aman",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p17",
+      "transcript": "the seventy two both eighty",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 513,
+      "audioMs": 1691
+    },
+    {
+      "clip": "daniel_tts_quiet_p01_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p01",
+      "transcript": "blood pressure one hundred and twenty over eighty",
+      "parsed": "systolic=120 diastolic=80",
+      "score": {
+        "expectedFields": 2,
+        "correctFields": 2,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "systolic": {
+            "expected": 120,
+            "got": 120,
+            "flagged": false
+          },
+          "diastolic": {
+            "expected": 80,
+            "got": 80,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 665,
+      "audioMs": 2487
+    },
+    {
+      "clip": "daniel_tts_quiet_p02_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p02",
+      "transcript": "temperature thirty six point seven",
+      "parsed": "temperature=36.7",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "temperature": {
+            "expected": 36.7,
+            "got": 36.7,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 662,
+      "audioMs": 2064
+    },
+    {
+      "clip": "daniel_tts_quiet_p03_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p03",
+      "transcript": "i'll seventy six",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 76,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 544,
+      "audioMs": 1393
+    },
+    {
+      "clip": "daniel_tts_quiet_p04_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p04",
+      "transcript": "respiratory rate eighteen",
+      "parsed": "respiratoryRate=18",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 18,
+            "got": 18,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 623,
+      "audioMs": 1721
+    },
+    {
+      "clip": "daniel_tts_quiet_p05_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p05",
+      "transcript": "oxygen saturation ninety eight",
+      "parsed": "spo2=98",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "spo2": {
+            "expected": 98,
+            "got": 98,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 655,
+      "audioMs": 2105
+    },
+    {
+      "clip": "daniel_tts_quiet_p06_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p06",
+      "transcript": "bp one hundred and twenty over eighty how seventy six respiratory rate eighteen oxygen ninety eight temperature thirty six point seven",
+      "parsed": "systolic=⚑ diastolic=⚑ respiratoryRate=18 spo2=98 temperature=36.7",
+      "score": {
+        "expectedFields": 6,
+        "correctFields": 3,
+        "wrongValues": 0,
+        "missed": 3,
+        "detail": {
+          "systolic": {
+            "expected": 120,
+            "got": null,
+            "flagged": true
+          },
+          "diastolic": {
+            "expected": 80,
+            "got": null,
+            "flagged": true
+          },
+          "pulse": {
+            "expected": 76,
+            "got": null,
+            "flagged": false
+          },
+          "respiratoryRate": {
+            "expected": 18,
+            "got": 18,
+            "flagged": false
+          },
+          "spo2": {
+            "expected": 98,
+            "got": 98,
+            "flagged": false
+          },
+          "temperature": {
+            "expected": 36.7,
+            "got": 36.7,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 1506,
+      "audioMs": 9314
+    },
+    {
+      "clip": "daniel_tts_quiet_p07_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p07",
+      "transcript": "respiratory rate sixteen",
+      "parsed": "respiratoryRate=16",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 16,
+            "got": 16,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 586,
+      "audioMs": 1744
+    },
+    {
+      "clip": "daniel_tts_quiet_p08_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p08",
+      "transcript": "i'll sixty",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 60,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 437,
+      "audioMs": 940
+    },
+    {
+      "clip": "daniel_tts_quiet_p09_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p09",
+      "transcript": "respiratory rate thirteen",
+      "parsed": "respiratoryRate=13",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 13,
+            "got": 13,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 527,
+      "audioMs": 1640
+    },
+    {
+      "clip": "daniel_tts_quiet_p10_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p10",
+      "transcript": "how's fifty",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 50,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 479,
+      "audioMs": 894
+    },
+    {
+      "clip": "daniel_tts_quiet_p11_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p11",
+      "transcript": "heart rate one hundred and fifteen",
+      "parsed": "pulse=115",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "pulse": {
+            "expected": 115,
+            "got": 115,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 597,
+      "audioMs": 1979
+    },
+    {
+      "clip": "daniel_tts_quiet_p12_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p12",
+      "transcript": "temperature thirty eight point five",
+      "parsed": "temperature=38.5",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "temperature": {
+            "expected": 38.5,
+            "got": 38.5,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 615,
+      "audioMs": 1889
+    },
+    {
+      "clip": "daniel_tts_quiet_p13_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p13",
+      "transcript": "then thirty seven point zero",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "temperature": {
+            "expected": 37,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 589,
+      "audioMs": 1913
+    },
+    {
+      "clip": "daniel_tts_quiet_p14_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p14",
+      "transcript": "bp ninety over sixty",
+      "parsed": "systolic=90 diastolic=60",
+      "score": {
+        "expectedFields": 2,
+        "correctFields": 2,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "systolic": {
+            "expected": 90,
+            "got": 90,
+            "flagged": false
+          },
+          "diastolic": {
+            "expected": 60,
+            "got": 60,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 546,
+      "audioMs": 1686
+    },
+    {
+      "clip": "daniel_tts_quiet_p15_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p15",
+      "transcript": "bp one hundred and forty over ninety house eighty eight said ninety five",
+      "parsed": "systolic=⚑ diastolic=⚑",
+      "score": {
+        "expectedFields": 4,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 4,
+        "detail": {
+          "systolic": {
+            "expected": 140,
+            "got": null,
+            "flagged": true
+          },
+          "diastolic": {
+            "expected": 90,
+            "got": null,
+            "flagged": true
+          },
+          "pulse": {
+            "expected": 88,
+            "got": null,
+            "flagged": false
+          },
+          "spo2": {
+            "expected": 95,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 981,
+      "audioMs": 4925
+    },
+    {
+      "clip": "daniel_tts_quiet_p16_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p16",
+      "transcript": "blood pressure one hundred and ten over",
+      "parsed": "systolic=⚑ diastolic=⚑",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "diastolic": {
+            "got": null,
+            "flagged": true
+          }
+        }
+      },
+      "processingMs": 609,
+      "audioMs": 1999
+    },
+    {
+      "clip": "daniel_tts_quiet_p17_1.wav",
+      "speaker": "daniel",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p17",
+      "transcript": "i'll seventy two hours a day",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 627,
+      "audioMs": 2310
+    },
+    {
+      "clip": "eddy_tts_quiet_p01_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p01",
+      "transcript": "blood pressure one hundred twenty over eighty",
+      "parsed": "systolic=120 diastolic=80",
+      "score": {
+        "expectedFields": 2,
+        "correctFields": 2,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "systolic": {
+            "expected": 120,
+            "got": 120,
+            "flagged": false
+          },
+          "diastolic": {
+            "expected": 80,
+            "got": 80,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 796,
+      "audioMs": 2973
+    },
+    {
+      "clip": "eddy_tts_quiet_p02_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p02",
+      "transcript": "cambridgeshire thirty six point seven",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "temperature": {
+            "expected": 36.7,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 722,
+      "audioMs": 2665
+    },
+    {
+      "clip": "eddy_tts_quiet_p03_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p03",
+      "transcript": "oh seventy six",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 76,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 555,
+      "audioMs": 1689
+    },
+    {
+      "clip": "eddy_tts_quiet_p04_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p04",
+      "transcript": "respiratory rate eighteen",
+      "parsed": "respiratoryRate=18",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 18,
+            "got": 18,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 662,
+      "audioMs": 2046
+    },
+    {
+      "clip": "eddy_tts_quiet_p05_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p05",
+      "transcript": "oxygen saturation ninety eight",
+      "parsed": "spo2=98",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "spo2": {
+            "expected": 98,
+            "got": 98,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 664,
+      "audioMs": 2591
+    },
+    {
+      "clip": "eddy_tts_quiet_p06_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p06",
+      "transcript": "bp one hundred twenty overrated post seventy six respiratory rate eighteen oxygen ninety eight temperature thirty six point seven",
+      "parsed": "systolic=⚑ diastolic=⚑ respiratoryRate=18 spo2=98 temperature=36.7",
+      "score": {
+        "expectedFields": 6,
+        "correctFields": 3,
+        "wrongValues": 0,
+        "missed": 3,
+        "detail": {
+          "systolic": {
+            "expected": 120,
+            "got": null,
+            "flagged": true
+          },
+          "diastolic": {
+            "expected": 80,
+            "got": null,
+            "flagged": true
+          },
+          "pulse": {
+            "expected": 76,
+            "got": null,
+            "flagged": false
+          },
+          "respiratoryRate": {
+            "expected": 18,
+            "got": 18,
+            "flagged": false
+          },
+          "spo2": {
+            "expected": 98,
+            "got": 98,
+            "flagged": false
+          },
+          "temperature": {
+            "expected": 36.7,
+            "got": 36.7,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 1644,
+      "audioMs": 10013
+    },
+    {
+      "clip": "eddy_tts_quiet_p07_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p07",
+      "transcript": "respiratory rate sixteen",
+      "parsed": "respiratoryRate=16",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 16,
+            "got": 16,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 707,
+      "audioMs": 2222
+    },
+    {
+      "clip": "eddy_tts_quiet_p08_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p08",
+      "transcript": "oh sixty",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 60,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 512,
+      "audioMs": 1273
+    },
+    {
+      "clip": "eddy_tts_quiet_p09_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p09",
+      "transcript": "respiratory rate thirteen",
+      "parsed": "respiratoryRate=13",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "respiratoryRate": {
+            "expected": 13,
+            "got": 13,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 661,
+      "audioMs": 2158
+    },
+    {
+      "clip": "eddy_tts_quiet_p10_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p10",
+      "transcript": "mostly empty",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "expected": 50,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 532,
+      "audioMs": 1209
+    },
+    {
+      "clip": "eddy_tts_quiet_p11_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p11",
+      "transcript": "heart rate one hundred fifteen",
+      "parsed": "pulse=115",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "pulse": {
+            "expected": 115,
+            "got": 115,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 699,
+      "audioMs": 2479
+    },
+    {
+      "clip": "eddy_tts_quiet_p12_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p12",
+      "transcript": "cambridgeshire thirty eight point five",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "temperature": {
+            "expected": 38.5,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 663,
+      "audioMs": 2569
+    },
+    {
+      "clip": "eddy_tts_quiet_p13_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p13",
+      "transcript": "thirty seven point zero",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "temperature": {
+            "expected": 37,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 573,
+      "audioMs": 2393
+    },
+    {
+      "clip": "eddy_tts_quiet_p14_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p14",
+      "transcript": "bp ninety over sixty",
+      "parsed": "systolic=90 diastolic=60",
+      "score": {
+        "expectedFields": 2,
+        "correctFields": 2,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "systolic": {
+            "expected": 90,
+            "got": 90,
+            "flagged": false
+          },
+          "diastolic": {
+            "expected": 60,
+            "got": 60,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 620,
+      "audioMs": 2253
+    },
+    {
+      "clip": "eddy_tts_quiet_p15_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p15",
+      "transcript": "bp one hundred forty over ninety pulse eighty eight sad ninety five",
+      "parsed": "systolic=140 diastolic=90 pulse=⚑",
+      "score": {
+        "expectedFields": 4,
+        "correctFields": 2,
+        "wrongValues": 0,
+        "missed": 2,
+        "detail": {
+          "systolic": {
+            "expected": 140,
+            "got": 140,
+            "flagged": false
+          },
+          "diastolic": {
+            "expected": 90,
+            "got": 90,
+            "flagged": false
+          },
+          "pulse": {
+            "expected": 88,
+            "got": null,
+            "flagged": true
+          },
+          "spo2": {
+            "expected": 95,
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 1186,
+      "audioMs": 5437
+    },
+    {
+      "clip": "eddy_tts_quiet_p16_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p16",
+      "transcript": "blood pressure one hundred ten over",
+      "parsed": "systolic=⚑ diastolic=⚑",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 1,
+        "wrongValues": 0,
+        "missed": 0,
+        "detail": {
+          "diastolic": {
+            "got": null,
+            "flagged": true
+          }
+        }
+      },
+      "processingMs": 710,
+      "audioMs": 2541
+    },
+    {
+      "clip": "eddy_tts_quiet_p17_1.wav",
+      "speaker": "eddy",
+      "mic": "tts",
+      "noise": "quiet",
+      "phrase": "p17",
+      "transcript": "oh seventy two pulsating",
+      "parsed": "—",
+      "score": {
+        "expectedFields": 1,
+        "correctFields": 0,
+        "wrongValues": 0,
+        "missed": 1,
+        "detail": {
+          "pulse": {
+            "got": null,
+            "flagged": false
+          }
+        }
+      },
+      "processingMs": 608,
+      "audioMs": 2393
+    }
+  ]
+}
